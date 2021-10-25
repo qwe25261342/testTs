@@ -131,3 +131,52 @@
 // }
 // let directions = Directions.Up;//let directions = 1 /* Up */
 
+// //約束取值只能是某幾個規定之一
+// type EventNames = 'click' | 12 | false;
+// function handleEvent(num: number, event: EventNames){
+//     console.log("123");
+// }
+// handleEvent(12,12)
+
+// //當新增越界的元素時，它的型別會被限制為元組中每個型別的聯合型別
+// let tom: [string, number];
+// tom = ['Tom', 25];
+// tom.push('male');
+// tom.push(true)//報錯
+// console.log(tom);
+
+// const enum Directions {
+//     Up,
+//     Down,
+//     Left,
+//     Right
+// }
+// let directions = [Directions.Up, Directions.Down, Directions.Left, Directions.Right];
+// console.log(directions);
+
+// class Animal {
+//     constructor(name :string) {
+//         this.name = name;
+//     }
+//     get name() {
+//         return 'Jack';
+//     }
+//     set name(value) {
+//         console.log('setter: ' + value);
+//     }
+// }
+// let a = new Animal('Kitty'); // setter: Kitty
+// a.name = 'Tom'; // setter: Tom
+// console.log(a.name); //jack
+
+
+//介面繼承類別
+// class Point {
+//     x: number;
+//     y: number ;
+// }
+// interface Point3d extends Point {
+//     z: number;
+// }
+// let point3d: Point3d = {x: 1, y: 2, z: 3};
+
