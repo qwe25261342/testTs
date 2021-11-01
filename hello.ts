@@ -179,8 +179,8 @@
 //     z: number;
 // }
 // let point3d: Point3d = {x: 1, y: 2, z: 3};
-console.log("1");
-console.log("2");
-console.log("3");
-console.log("4");
+console.log("10");
+console.log("20");
+console.log("30");
+console.log("40");
 console.log("5");
